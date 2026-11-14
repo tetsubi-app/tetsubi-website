@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tetsubi — music player for Jellyfin on iPhone and Mac</title>
+  <meta name="description" content="Tetsubi is a music player for iPhone and Mac that plays your own music library from your Jellyfin server. Album-first, offline downloads, gapless playback, no accounts and no tracking.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://tetsubi.app/">
+  <meta name="theme-color" content="#000b25">
+  <meta name="application-name" content="Tetsubi">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tetsubi">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:url" content="https://tetsubi.app/">
+  <meta property="og:title" content="Tetsubi — music player for Jellyfin on iPhone and Mac">
+  <meta property="og:description" content="Tetsubi is a music player for iPhone and Mac that plays your own music library from your Jellyfin server. Album-first, offline downloads, gapless playback, no accounts and no tracking.">
+  <meta property="og:image" content="https://tetsubi.app/assets/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Tetsubi: your music, your server. A music player for Jellyfin on iPhone and Mac.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tetsubi — music player for Jellyfin on iPhone and Mac">
+  <meta name="twitter:description" content="Tetsubi is a music player for iPhone and Mac that plays your own music library from your Jellyfin server. Album-first, offline downloads, gapless playback, no accounts and no tracking.">
+  <meta name="twitter:image" content="https://tetsubi.app/assets/social-card.png">
+  <link rel="alternate" type="text/plain" title="Tetsubi summary for AI assistants" href="https://tetsubi.app/llms.txt">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://tetsubi.app/#org",
+        "name": "DEKIRU",
+        "legalName": "DEKIRU Ltd",
+        "url": "https://tetsubi.app/"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://tetsubi.app/#site",
+        "name": "Tetsubi",
+        "url": "https://tetsubi.app/",
+        "publisher": {
+          "@id": "https://tetsubi.app/#org"
+        },
+        "inLanguage": "en-GB",
+        "about": {
+          "@id": "https://tetsubi.app/#app"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://tetsubi.app/#app",
+        "name": "Tetsubi",
+        "alternateName": [
+          "Tetsubi for Jellyfin",
+          "Tetsubi music player"
+        ],
+        "description": "Tetsubi is a music player for iPhone and Mac that plays your own music library from your Jellyfin server, with offline album downloads, gapless playback, an equaliser, AirPlay, Siri and a Mac app.",
+        "applicationCategory": "MultimediaApplication",
+        "applicationSubCategory": "Music player",
+        "operatingSystem": "iOS, macOS",
+        "url": "https://tetsubi.app/",
+        "image": "https://tetsubi.app/assets/app-icon-512.png",
+        "screenshot": "https://tetsubi.app/assets/social-card.png",
+        "publisher": {
+          "@id": "https://tetsubi.app/#org"
+        },
+        "author": {
+          "@id": "https://tetsubi.app/#org"
+        },
+        "inLanguage": "en-GB",
+        "keywords": "Jellyfin music player, Jellyfin client, Jellyfin iOS app, Jellyfin Mac app, offline music, FLAC, gapless playback, self-hosted music",
+        "featureList": [
+          "Streams music from your own Jellyfin server",
+          "Quick Connect sign-in",
+          "Album downloads for offline listening (original, FLAC, ALAC, AAC, MP3, Opus, WAV)",
+          "Gapless playback, shuffle and repeat",
+          "On This Day album anniversaries",
+          "Blurred album-art backgrounds",
+          "10-band equaliser and visualiser",
+          "AirPlay, lock-screen and Dynamic Island controls",
+          "Siri and Shortcuts",
+          "Maniac Mode: albums play start to finish",
+          "Artist information from MusicBrainz and Wikipedia",
+          "Mac app",
+          "CarPlay"
+        ],
+        "privacyPolicy": "https://tetsubi.app/privacy.html"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://tetsubi.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Tetsubi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tetsubi is a music player app for iPhone and Mac that plays music from a Jellyfin server. It's a Jellyfin music client: it streams your own music library from your server, and downloads albums to your device so you can listen offline."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which music servers does Tetsubi work with?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Jellyfin. Tetsubi is made for Jellyfin servers and signs in with Jellyfin's Quick Connect or a Jellyfin username and password. It doesn't connect to Plex, Emby, Navidrome or Subsonic servers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Tetsubi like Plexamp, but for Jellyfin?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In spirit, yes. Plexamp is Plex's music app; Tetsubi brings the same album-first feel to Jellyfin, with blurred album-art backgrounds, gapless playback and a Now Playing screen built around the cover. Tetsubi isn't made by or connected with Plex."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I listen to my Jellyfin music offline on iPhone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Download any album in Tetsubi and it plays with no connection, including on the lock screen with its artwork. Downloads can keep their original quality (such as FLAC) or be converted to ALAC, AAC, MP3, Opus or WAV."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Tetsubi support CarPlay, AirPlay and Siri?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, all three."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there an Android version?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, it's in the works and coming soon. Tetsubi is available for iPhone and Mac first."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Tetsubi collect my data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. There's no Tetsubi account, no analytics and no adverts. The app talks only to your own Jellyfin server, plus MusicBrainz, Wikidata and Wikipedia for artist information. See the privacy policy."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/disc.svg" alt="">Tetsubi</a>
+      <nav class="site-nav">
+        <a href="./#features">Features</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="wrap">
+        <img class="disc" src="assets/disc.svg" alt="The Tetsubi app icon: a pink-to-blue disc" width="240" height="240">
+        <h1>Your music.<br><span class="grad">From start to finish.</span></h1>
+        <p class="lede">Tetsubi is a music player for iPhone and Mac that plays your own library from your Jellyfin server. Built around albums, made for listening from beginning to end.</p>
+        <div class="badges">
+          <span class="pill primary">Coming soon to the App Store</span>
+          <span class="pill">iPhone · Mac</span>
+          <span class="pill">Android coming soon</span>
+        </div>
+      </div>
+    </div>
+
+    <section id="features">
+      <div class="wrap">
+        <h2>Everything an album deserves</h2>
+        <p class="section-intro">Browse, play and download your collection the way you'd flip through records, with the artwork front and centre.</p>
+        <div class="grid">
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></div>
+            <h3>On This Day</h3>
+            <p>Home shows albums released on today's date in years gone by. Anniversaries you'd forgotten you owned.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg></div>
+            <h3>Downloads for offline</h3>
+            <p>Save whole albums to your phone in their original quality, or as FLAC, ALAC, AAC, MP3 or Opus. They keep going in the background.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 12c3-6 6-6 9 0s6 6 9 0"/></svg></div>
+            <h3>Gapless playback</h3>
+            <p>The next track is ready before this one ends, so live albums and DJ mixes flow without a break. Shuffle and repeat too.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 16l-5-5-9 9"/></svg></div>
+            <h3>Artwork everywhere</h3>
+            <p>While music plays, the whole app glows with a soft blur of the album cover, and the progress bar picks up a colour from the art.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg></div>
+            <h3>Equaliser &amp; visualiser</h3>
+            <p>A ten-band equaliser with presets, and spectrum bars that dance along on the Now Playing screen.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"/><path d="M12 15l5 6H7z"/></svg></div>
+            <h3>AirPlay &amp; lock screen</h3>
+            <p>Send music to your speakers with AirPlay, and control it from the lock screen, Control Centre and Dynamic Island.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v4"/></svg></div>
+            <h3>Siri &amp; Shortcuts</h3>
+            <p>"Play <em>Fight For Your Right To Party</em> in Tetsubi." Or ask for something at random when you can't decide.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <h3>Maniac Mode</h3>
+            <p>For purists: albums play from the first track to the last. No skipping, no shuffle, no scrubbing. Just as the artist intended.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4.5-6 8-6s7 2 8 6"/></svg></div>
+            <h3>About the artist</h3>
+            <p>Every album page tells you a little about who made it, with facts from MusicBrainz and an introduction from Wikipedia.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h3>On your Mac too</h3>
+            <p>A proper Mac app with menus and keyboard shortcuts, sharing everything that makes the iPhone app work.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 13l2-6a2 2 0 0 1 2-1.4h10A2 2 0 0 1 19 7l2 6v5a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-1H7v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 13h18M7 15.5h.01M17 15.5h.01"/></svg></div>
+            <h3>CarPlay</h3>
+            <p>Your albums, artists and downloads on the car's screen, including music saved for when there's no signal.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+            <h3>Easy, secure sign-in</h3>
+            <p>Sign in with a Quick Connect code instead of typing your password. Your login is kept in the iPhone's Keychain.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="split">
+          <div class="card">
+            <h2>What you need</h2>
+            <ul>
+              <li>A <a href="https://jellyfin.org/">Jellyfin</a> server with your music on it. Jellyfin is free, open-source media server software you run at home.</li>
+              <li>An iPhone or a Mac. Android is coming soon.</li>
+              <li>To listen away from home, a way to reach your server from outside, such as a VPN or a secure web address.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2>What you don't</h2>
+            <ul>
+              <li>No Tetsubi account to make.</li>
+              <li>No subscription and no adverts.</li>
+              <li>No tracking. Tetsubi collects nothing about you. <a href="privacy.html">Read the privacy policy</a>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="wrap">
+        <h2>Questions</h2>
+
+        <details>
+          <summary>What is Tetsubi?</summary>
+          <div>
+            <p>Tetsubi is a music player app for iPhone and Mac that plays music from a Jellyfin server. It's a Jellyfin music client: it streams your own music library from your server, and downloads albums to your device so you can listen offline.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Which music servers does Tetsubi work with?</summary>
+          <div>
+            <p>Jellyfin. Tetsubi is made for Jellyfin servers and signs in with Jellyfin's Quick Connect or a Jellyfin username and password. It doesn't connect to Plex, Emby, Navidrome or Subsonic servers.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Is Tetsubi like Plexamp, but for Jellyfin?</summary>
+          <div>
+            <p>In spirit, yes. Plexamp is Plex's music app; Tetsubi brings the same album-first feel to Jellyfin, with blurred album-art backgrounds, gapless playback and a Now Playing screen built around the cover. Tetsubi isn't made by or connected with Plex.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Can I listen to my Jellyfin music offline on iPhone?</summary>
+          <div>
+            <p>Yes. Download any album in Tetsubi and it plays with no connection, including on the lock screen with its artwork. Downloads can keep their original quality (such as FLAC) or be converted to ALAC, AAC, MP3, Opus or WAV.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Does Tetsubi support CarPlay, AirPlay and Siri?</summary>
+          <div>
+            <p>Yes, all three.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Is there an Android version?</summary>
+          <div>
+            <p>Yes, it's in the works and coming soon. Tetsubi is available for iPhone and Mac first.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Does Tetsubi collect my data?</summary>
+          <div>
+            <p>No. There's no Tetsubi account, no analytics and no adverts. The app talks only to your own Jellyfin server, plus MusicBrainz, Wikidata and Wikipedia for artist information. See the <a href="privacy.html">privacy policy</a>.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 DEKIRU Ltd. Made with AI. Tetsubi is not affiliated with the Jellyfin project.</span>
+      <nav>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

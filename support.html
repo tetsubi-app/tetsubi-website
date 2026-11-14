@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — Tetsubi, the Jellyfin music player</title>
+  <meta name="description" content="Help with Tetsubi, the Jellyfin music player for iPhone and Mac: signing in with Quick Connect, downloads, listening away from home, mobile data and how to get in touch.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://tetsubi.app/support.html">
+  <meta name="theme-color" content="#000b25">
+  <meta name="application-name" content="Tetsubi">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tetsubi">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:url" content="https://tetsubi.app/support.html">
+  <meta property="og:title" content="Support — Tetsubi, the Jellyfin music player">
+  <meta property="og:description" content="Help with Tetsubi, the Jellyfin music player for iPhone and Mac: signing in with Quick Connect, downloads, listening away from home, mobile data and how to get in touch.">
+  <meta property="og:image" content="https://tetsubi.app/assets/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Tetsubi: your music, your server. A music player for Jellyfin on iPhone and Mac.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Support — Tetsubi, the Jellyfin music player">
+  <meta name="twitter:description" content="Help with Tetsubi, the Jellyfin music player for iPhone and Mac: signing in with Quick Connect, downloads, listening away from home, mobile data and how to get in touch.">
+  <meta name="twitter:image" content="https://tetsubi.app/assets/social-card.png">
+  <link rel="alternate" type="text/plain" title="Tetsubi summary for AI assistants" href="https://tetsubi.app/llms.txt">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://tetsubi.app/#org",
+        "name": "DEKIRU",
+        "legalName": "DEKIRU Ltd",
+        "url": "https://tetsubi.app/"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://tetsubi.app/support.html#faq",
+        "name": "Tetsubi support",
+        "about": {
+          "@id": "https://tetsubi.app/#app"
+        },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What do I need to use Tetsubi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Jellyfin server with a music library, and an account on it. Tetsubi doesn't supply any music: it plays what's on your server."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I sign in with Quick Connect?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Enter your server's address in Tetsubi and it shows a six-digit code. Then, signed in to Jellyfin somewhere else (the Jellyfin website or another Jellyfin app), open your profile, choose Quick Connect and type the code in. Tetsubi signs in by itself a moment later. If the code doesn't appear, Quick Connect may be turned off. Your server's administrator can turn it on in the Jellyfin dashboard under General. Or tap Sign in with username & password to sign in that way instead."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's my server address?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It's the address you use to open Jellyfin in a web browser, for example http://192.168.1.20:8096 at home, or https://music.example.com if you've set up a web address for it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I listen away from home?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, as long as your phone can reach your server. Common ways are a VPN back to your home network (such as Tailscale or WireGuard), or a secure https:// web address for your server. Jellyfin's own documentation covers setting these up. Or download albums before you leave: downloaded music plays with no connection at all."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do downloads work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tap the download button on any album. Downloads carry on while Tetsubi is in the background, and you can pause, resume or cancel them from the Downloads tab, which also shows how much space they use. Choose the format in Settings. Original (as served) keeps the files exactly as they are on your server. Tetsubi never converts a lossy file (like an MP3) into a lossless one, because that would make it bigger without making it sound better."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will Tetsubi use my mobile data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, unless you're on Wi-Fi. To save data, Tetsubi streams at a lower quality on mobile data; you choose the quality, or turn Streaming over mobile data off to stream the original files. Downloading over mobile data is a separate setting. You'll find both in Settings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "I can't skip tracks or shuffle",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Maniac Mode is probably on. It plays albums from start to finish with no skipping, shuffle, repeat or scrubbing. Turn it off at the top of Settings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Tetsubi work with CarPlay?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Your albums, artists and downloads show on the car's screen, including music saved for when there's no signal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where does the \"About the artist\" text come from?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "From MusicBrainz, Wikidata and Wikipedia. If something's wrong, it can be corrected there, and Tetsubi will pick up the change."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I sign out?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Go to Settings and tap Sign Out. Your downloads stay on the device until you delete them."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Tetsubi",
+            "item": "https://tetsubi.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Support",
+            "item": "https://tetsubi.app/support.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/disc.svg" alt="">Tetsubi</a>
+      <nav class="site-nav">
+        <a href="./#features">Features</a>
+        <a href="support.html" aria-current="page">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="wrap">
+      <h1>Support</h1>
+      <p class="updated">Answers to common questions. If yours isn't here, get in touch below.</p>
+
+      <h2>Getting started</h2>
+
+      <details>
+        <summary>What do I need to use Tetsubi?</summary>
+        <div>
+          <p>A <a href="https://jellyfin.org/">Jellyfin</a> server with a music library, and an account on it. Tetsubi doesn't supply any music: it plays what's on your server.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How do I sign in with Quick Connect?</summary>
+        <div>
+          <p>Enter your server's address in Tetsubi and it shows a six-digit code. Then, signed in to Jellyfin somewhere else (the Jellyfin website or another Jellyfin app), open your profile, choose <span class="ui">Quick Connect</span> and type the code in. Tetsubi signs in by itself a moment later.</p>
+          <p>If the code doesn't appear, Quick Connect may be turned off. Your server's administrator can turn it on in the Jellyfin dashboard under <span class="ui">General</span>. Or tap <span class="ui">Sign in with username &amp; password</span> to sign in that way instead.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What's my server address?</summary>
+        <div>
+          <p>It's the address you use to open Jellyfin in a web browser, for example <code>http://192.168.1.20:8096</code> at home, or <code>https://music.example.com</code> if you've set up a web address for it.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Can I listen away from home?</summary>
+        <div>
+          <p>Yes, as long as your phone can reach your server. Common ways are a VPN back to your home network (such as Tailscale or WireGuard), or a secure <code>https://</code> web address for your server. Jellyfin's own documentation covers setting these up.</p>
+          <p>Or download albums before you leave: downloaded music plays with no connection at all.</p>
+        </div>
+      </details>
+
+      <h2>Listening</h2>
+
+      <details>
+        <summary>How do downloads work?</summary>
+        <div>
+          <p>Tap the download button on any album. Downloads carry on while Tetsubi is in the background, and you can pause, resume or cancel them from the <span class="ui">Downloads</span> tab, which also shows how much space they use.</p>
+          <p>Choose the format in <span class="ui">Settings</span>. <span class="ui">Original (as served)</span> keeps the files exactly as they are on your server. Tetsubi never converts a lossy file (like an MP3) into a lossless one, because that would make it bigger without making it sound better.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Will Tetsubi use my mobile data?</summary>
+        <div>
+          <p>Yes, unless you're on Wi-Fi. To save data, Tetsubi streams at a lower quality on mobile data; you choose the quality, or turn <span class="ui">Streaming over mobile data</span> off to stream the original files. Downloading over mobile data is a separate setting. You'll find both in <span class="ui">Settings</span>.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>I can't skip tracks or shuffle</summary>
+        <div>
+          <p>Maniac Mode is probably on. It plays albums from start to finish with no skipping, shuffle, repeat or scrubbing. Turn it off at the top of <span class="ui">Settings</span>.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Does Tetsubi work with CarPlay?</summary>
+        <div>
+          <p>Yes. Your albums, artists and downloads show on the car's screen, including music saved for when there's no signal.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Where does the "About the artist" text come from?</summary>
+        <div>
+          <p>From <a href="https://musicbrainz.org/">MusicBrainz</a>, <a href="https://www.wikidata.org/">Wikidata</a> and <a href="https://en.wikipedia.org/">Wikipedia</a>. If something's wrong, it can be corrected there, and Tetsubi will pick up the change.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How do I sign out?</summary>
+        <div>
+          <p>Go to <span class="ui">Settings</span> and tap <span class="ui">Sign Out</span>. Your downloads stay on the device until you delete them.</p>
+        </div>
+      </details>
+
+      <div class="contact" id="contact">
+        <h2>Still stuck?</h2>
+        <p>Send us a message and we'll get back to you. It helps to say which device you're using, your Tetsubi version (in <span class="ui">Settings</span>) and your Jellyfin server version.</p>
+        <!-- TODO: replace with the real support email address before publishing. -->
+        <a class="pill primary" href="mailto:hello@tetsubi.app">hello@tetsubi.app</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 DEKIRU Ltd. Made with AI. Tetsubi is not affiliated with the Jellyfin project.</span>
+      <nav>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
