@@ -4,7 +4,7 @@
 
 Tetsubi was made with Claude, Anthropic's AI, under its developer's direction and review.
 
-Tetsubi works only with Jellyfin servers (not Plex, Emby, Navidrome or Subsonic). It brings an album-first, Plexamp-like experience to Jellyfin; it is not made by or connected with Plex or the Jellyfin project. An Android version is in the works and coming soon.
+Tetsubi works only with Jellyfin servers (not Plex, Emby, Navidrome or Subsonic). It brings an album-first, Plexamp-like experience to Jellyfin; it is not made by or connected with Plex or the Jellyfin project. Android and Linux versions are in the works and coming soon.
 
 ## Features
 
@@ -27,7 +27,7 @@ Tetsubi works only with Jellyfin servers (not Plex, Emby, Navidrome or Subsonic)
 ## Requirements
 
 - A Jellyfin server with a music library, and an account on it
-- iPhone or Mac (Android coming soon)
+- iPhone or Mac (Android and Linux coming soon)
 - To listen away from home: a VPN to the home network or a secure https address for the server
 
 ## Privacy
